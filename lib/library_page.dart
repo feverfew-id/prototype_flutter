@@ -32,6 +32,8 @@ class LibraryPage extends StatelessWidget {
         itemCount: books.length,
         itemBuilder: (context,index) {
           return Card( //                           <-- Card widget
+
+          margin: EdgeInsets.all(10),
             child: ListTile(
               leading: Icon(Icons.book),
               title: Text(books[index].title),
